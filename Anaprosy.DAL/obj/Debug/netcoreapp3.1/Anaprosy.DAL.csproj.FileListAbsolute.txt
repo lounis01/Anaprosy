@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\Anaprosy.DAL\bin\Debug\netcoreapp3.1\Anaprosy.DAL.deps.json
+C:\Users\Admin\source\repos\Anaprosy.DAL\bin\Debug\netcoreapp3.1\Anaprosy.DAL.runtimeconfig.json
+C:\Users\Admin\source\repos\Anaprosy.DAL\bin\Debug\netcoreapp3.1\Anaprosy.DAL.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\Anaprosy.DAL\bin\Debug\netcoreapp3.1\Anaprosy.DAL.dll
+C:\Users\Admin\source\repos\Anaprosy.DAL\bin\Debug\netcoreapp3.1\Anaprosy.DAL.pdb
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.dll
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.pdb
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Anaprosy.DAL\obj\Debug\netcoreapp3.1\Anaprosy.DAL.csprojAssemblyReference.cache

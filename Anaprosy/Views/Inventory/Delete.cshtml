@@ -1,0 +1,41 @@
+﻿@model Anaprosy.DAL.Models.Inventory
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Supprimer</h1>
+
+<h3>Êtes-vous sûr de vouloir supprimer cet inventaire ?</h3>
+<div>
+   
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        @*<dt class="col-sm-10">
+            Liste des produits :
+            @foreach (var product in Model.ProductList)
+            {
+        <dd class="col-sm-10">
+            @product.Quantity
+            @product.Name
+        </dd>
+            }   
+       </dt>*@
+
+
+
+        </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Oui, Supprimer" class="btn btn-danger" />
+        <a asp-action="List">Non, Retour à la liste </a>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Anaprosy.DAL.Models.Inventory>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>Liste des inventaires : </h1>
+
+<div class="row">
+    <div class="col-md-4">
+
+
+
+       
+            @foreach (var inventory in Model)
+            {
+
+                <h3>Date de l'inventaire :  </h3>
+                <div>@inventory.Date.ToShortDateString()</div>
+                <h3>Liste des produits :</h3>
+                @foreach (var product in inventory.ProductList.ToList().Where(x => x.InventoryID == inventory.ID))
+                {
+                    @product.Quantity <text>&nbsp</text> @product.Name
+                    <br>
+                }
+                <a asp-action="Delete" asp-route-id="@inventory.ID">Supprimer l'inventaire</a>
+                @*<text>||</text>
+                <a asp-action="Edit" asp-route-id="@inventory.ID">Editer inventaire</a>
+                <br>*@
+               
+
+            }
+        
+
+
+
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿@model Anaprosy.DAL.Models.Inventory
+
+
+@{ ViewData["Title"] = "Edit";}
+
+
+
+<h4>Editer Inventaire</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" id="editForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+            <div id="productListContainer">
+                @Html.EditorFor(model => model.ProductList)
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input class="btn btn-default" type="button" id="btnAdd" value="Add product" />
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" value="Save" id="submit" class="btn btn-default" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script type="text/javascript">
+        $("#btnAdd").on('click', function () {
+            $.ajax({
+                async: true,
+                data: $('#editForm').serialize(),
+                type: "POST",
+                url: '/Product/AddProduct',
+                success: function (partialView) {
+                    console.log("partialView: " + partialView);
+                    $('#productListContainer').html(partialView);
+                }
+            });
+        });
+        $(document).ready(function () {
+            $("#btnAdd").trigger("click");
+        });
+    </script>
+}
